@@ -27,19 +27,18 @@ fn main() {
 
     let bindings_source = bindings
         .to_string()
-        .replace("_RTC_FORMAT_", "_")
-        .replace("_RTC_BUILD_QUALITY_", "_")
-        .replace("_RTC_FEATURE_FLAG_", "_")
-        .replace("_RTC_RAY_QUERY_FLAG_", "_")
-        .replace("_RTC_DEVICE_PROPERTY_", "_")
-        .replace("_RTC_ERROR_", "_")
-        .replace("_RTC_BUFFER_TYPE_", "_")
-        .replace("_RTC_GEOMETRY_TYPE_", "_")
-        .replace("_RTC_SUBDIVISION_MODE_", "_")
-        .replace("_RTC_CURVE_FLAG_", "_")
-        .replace("_RTC_SCENE_FLAG_", "_")
-        .replace("_RTC_BUILD_FLAG_", "_")
-        .replace("_RTC_FORMAT_", "_")
+        .replace("RTC_FORMAT_", "")
+        .replace("RTC_BUILD_QUALITY_", "")
+        .replace("RTC_RAY_QUERY_FLAG_", "")
+        .replace("RTC_DEVICE_PROPERTY_", "")
+        .replace("RTC_ERROR_", "")
+        .replace("RTC_BUFFER_TYPE_", "")
+        .replace("RTC_GEOMETRY_TYPE_", "")
+        .replace("RTC_SUBDIVISION_MODE_", "")
+        .replace("RTC_CURVE_FLAG_", "")
+        .replace("RTC_SCENE_FLAG_", "")
+        .replace("RTC_BUILD_FLAG_", "")
+        .replace("RTC_FORMAT_", "")
         .replace(
             "pub type size_t = ::std::os::raw::c_ulong",
             "pub type size_t = usize",
