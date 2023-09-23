@@ -1,0 +1,3 @@
+/target
+/lib/embree4/*
+!/lib/embree4/README.md

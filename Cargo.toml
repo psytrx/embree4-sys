@@ -1,0 +1,20 @@
+[package]
+name = "embree4-sys"
+version = "0.0.1"
+edition = "2021"
+description = "FFI bindings for Intel's Embree 4 high-performance ray tracing library."
+keywords = ["intel", "embree", "ray", "tracing", "bvh"]
+categories = ["external-ffi-bindings", "graphics", "rendering", "multimedia"]
+repository = "https://github.com/psytrx/embree4-sys/"
+documentation = "https://docs.rs/embree4-sys/"
+license = "MIT"
+license-file = "LICENSE"
+
+exclude = [".gitignore"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.68.1"
