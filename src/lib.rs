@@ -15,6 +15,8 @@
 
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
+pub const RTC_INVALID_GEOMETRY_ID: u32 = (-1_i32) as u32;
+
 impl Default for RTCBuildQuality {
     fn default() -> Self {
         Self::MEDIUM
