@@ -7,7 +7,6 @@ keywords = ["intel", "embree", "ray", "tracing", "bvh"]
 categories = ["external-ffi-bindings", "graphics", "rendering", "multimedia"]
 repository = "https://github.com/psytrx/embree4-sys/"
 documentation = "https://docs.rs/embree4-sys/"
-license = "MIT"
 license-file = "LICENSE"
 
 exclude = [".gitignore"]
