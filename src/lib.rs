@@ -29,3 +29,37 @@ impl Default for RTCSceneFlags {
         Self(Default::default())
     }
 }
+
+impl Default for RTCRay {
+    fn default() -> Self {
+        Self {
+            org_x: Default::default(),
+            org_y: Default::default(),
+            org_z: Default::default(),
+            tnear: Default::default(),
+            dir_x: Default::default(),
+            dir_y: Default::default(),
+            dir_z: Default::default(),
+            time: Default::default(),
+            tfar: std::f32::INFINITY,
+            mask: -1_i32 as u32,
+            id: Default::default(),
+            flags: Default::default(),
+        }
+    }
+}
+
+impl Default for RTCHit {
+    fn default() -> Self {
+        Self {
+            Ng_x: Default::default(),
+            Ng_y: Default::default(),
+            Ng_z: Default::default(),
+            u: Default::default(),
+            v: Default::default(),
+            primID: Default::default(),
+            geomID: RTC_INVALID_GEOMETRY_ID,
+            instID: [RTC_INVALID_GEOMETRY_ID],
+        }
+    }
+}
