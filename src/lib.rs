@@ -63,3 +63,19 @@ impl Default for RTCHit {
         }
     }
 }
+
+#[allow(clippy::derivable_impls)]
+impl Default for RTCBounds {
+    fn default() -> Self {
+        Self {
+            lower_x: Default::default(),
+            lower_y: Default::default(),
+            lower_z: Default::default(),
+            align0: Default::default(),
+            upper_x: Default::default(),
+            upper_y: Default::default(),
+            upper_z: Default::default(),
+            align1: Default::default(),
+        }
+    }
+}
