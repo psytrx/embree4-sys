@@ -79,3 +79,6 @@ impl Default for RTCBounds {
         }
     }
 }
+
+unsafe impl Send for RTCIntersectArguments {}
+unsafe impl Sync for RTCIntersectArguments {}
