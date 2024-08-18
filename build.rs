@@ -22,6 +22,7 @@ fn main() {
         .rustified_enum("RTCGeometryType")
         .rustified_enum("RTCSubdivisionMode")
         .bitfield_enum("RTC.*Flags")
+        .blocklist_type("RTCPointQueryN")
         .generate()
         .expect("Unable to generate bindings");
 
