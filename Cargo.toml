@@ -16,4 +16,4 @@ exclude = [".gitignore"]
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.68.1"
+bindgen = "0.72.1"
