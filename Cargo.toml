@@ -1,6 +1,6 @@
 [package]
 name = "embree4-sys"
-version = "0.0.12"
+version = "0.0.10"
 edition = "2021"
 description = "FFI bindings for Intel's Embree 4 high-performance ray tracing library."
 keywords = ["intel", "embree", "ray", "tracing", "bvh"]
@@ -16,4 +16,4 @@ exclude = [".gitignore"]
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.68.1"
+bindgen = "0.72.1"
